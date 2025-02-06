@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>LogIN</title>
+    <script src="https://kit.fontawesome.com/f126f9dcc8.js" crossorigin="anonymous"></script>
+</head>
+
+<body
+    class="h-screen bg-[url('https://avatars.mds.yandex.net/i?id=4d2e045846980958772f2eb2efb559cb7d4189b2-10636899-images-thumbs&n=13')] bg-contain bg-center ">
+    <div class="continer mx-auto w-6/12 pt-30">
+         <!-- log-IN -->
+        <div id="log_in" class="pb-8 text-center bg-violet-200 rounded-lg shadow-blue-900 shadow-[-0px_0px_10px] cursor-pointer px-20">
+            <form class="">
+                <h1 class="inline-block py-6 text-[30px] font-bold text-violet-700">Log IN</h1>
+                <div class="flex justify-between pb-4">
+                    <label class="text-violet-700 underline text-[24px]" for="phone_number">Phone Number:</label>
+                <input id="phone_number" name="phone_number" type="tel" placeholder="(+998) 91 123 45 67" class="rounded-lg border border-violet-700 px-2 py-2">
+                </div>
+                <div class="flex justify-between pb-4">
+                    <label class="text-violet-700 underline text-[24px]" for="password">Password:</label>
+                <input id="password" name="password" type="password" placeholder="alpamis@123" class="rounded-lg border border-violet-700 px-2 py-2">
+                </div>
+            </form>
+            <div class="py-4 flex justify-evenly">
+                <button onclick="logIn()" class="px-8 py-1 text-white font-semibold bg-blue-500 text-[30px] rounded-lg active:bg-blue-300 cursor-pointer">Submit</button>
+                <button onclick="signUp2()" class="px-8 py-1 text-white font-semibold bg-blue-500 text-[30px] rounded-lg active:bg-blue-300 cursor-pointer">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../js/logIn.js"></script>
+</body>
+
+</html>
