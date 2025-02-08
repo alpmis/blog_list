@@ -22,11 +22,11 @@ async function logIn() {
         if (res.success) {
             localStorage.setItem("refreshToken", res?.data?.token?.refresh)
             localStorage.setItem("accessToken", res?.data?.token?.access)
-            window.location.pathname = "/pages/blog.html"
+            window.location.pathname = "/pages/blog.html"  
         }
-
+        
     } catch (error) {
-        console.log("Xatooo");
+        alert("Telefon raqam yoki parol xato!");
 
     }
 }

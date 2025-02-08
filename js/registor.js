@@ -10,7 +10,9 @@ function logIn2() {
 
 async function registor() {
     try {
-        if (password.value !== password2.value) throw new Error('Parol bir xil kiritilmadi..')
+        if (password.value !== password2.value || password.value=="") throw new Error('Parol bir xil kiritilmadi..')
+        if (!full_name.value) throw new Error("Isim kiritilmadi")
+        if (!phone_number.value) throw new Error("Telefon raqam kiritilmadi")
 
             const form_data = new FormData()
             form_data.append("full_name", full_name.value)

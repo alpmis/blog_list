@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Registor</title>
+    <script src="https://kit.fontawesome.com/f126f9dcc8.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="min-h-screen bg-[url('https://avatars.mds.yandex.net/i?id=4d2e045846980958772f2eb2efb559cb7d4189b2-10636899-images-thumbs&n=13')] bg-cover bg-center overflow-auto flex justify-center items-center px-4">
+    <div class="container mx-auto w-full sm:w-10/12 md:w-6/12 pt-10 sm:pt-16 md:pt-20 px-4">
+
+        <!-- ADD Blog -->
+        <div id="sign_up" class="pb-6 text-center bg-violet-200 rounded-lg shadow-lg cursor-pointer px-6 sm:px-12 md:px-20">
+            <form>
+                <h1 class="inline-block py-6 text-[24px] sm:text-[28px] md:text-[30px] font-bold text-violet-700">ADD Blog</h1>
+
+                <div class="flex flex-col sm:flex-row justify-between pb-2">
+                    <label class="text-violet-700 underline text-[18px] sm:text-[22px] md:text-[24px]" for="blog_title">Title:</label>
+                    <input id="blog_title" name="blog_title" type="text" placeholder="Blog nomi"
+                        class="rounded-lg border border-violet-700 px-2 py-2 w-full sm:w-auto">
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-between pb-2">
+                    <label class="text-violet-700 underline text-[18px] sm:text-[22px] md:text-[24px]" for="blog_category">Category:</label>
+                    <input id="blog_category" name="blog_category" type="tel" placeholder="Blog kategoriyasi"
+                        class="rounded-lg border border-violet-700 px-2 py-2 w-full sm:w-auto">
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-between pb-2">
+                    <label class="text-violet-700 underline text-[18px] sm:text-[22px] md:text-[24px]" for="blog_desc">Description:</label>
+                    <input id="blog_desc" name="blog_desc" type="text" placeholder="Blog haqida qisqacha:"
+                        class="rounded-lg border border-violet-700 px-2 py-2 w-full sm:w-auto">
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-between pb-2">
+                    <label class="text-violet-700 underline text-[18px] sm:text-[22px] md:text-[24px]" for="avatar">Image:</label>
+                    <input id="avatar" name="avatar" type="file" class="rounded-lg border border-violet-700 px-2 py-2 w-full sm:w-auto">
+                </div>
+            </form>
+
+            <div class="py-4 flex flex-col sm:flex-row justify-center gap-4">
+                <a href="./blog.html">
+                    <button class="px-6 sm:px-8 py-1 w-full text-white font-semibold bg-orange-500 text-[20px] sm:text-[24px] md:text-[30px] rounded-lg active:bg-blue-300 cursor-pointer">Back</button>
+                </a>
+                <button onclick="addBlog()"
+                    class="px-6 sm:px-8 py-1 text-white font-semibold bg-blue-500 text-[20px] sm:text-[24px] md:text-[30px] rounded-lg active:bg-blue-300 cursor-pointer">Add Blog</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/add_blog.js"></script>
+</body>
+
+</html>
